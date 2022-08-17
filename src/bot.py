@@ -1,10 +1,8 @@
 import src.scrap as sc
 import logging
-import os
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.dispatcher.filters import Text
 import src.glbl_nms
-from aiogram.utils.executor import start_webhook
 
 
 sc.parse_info()
@@ -16,26 +14,6 @@ bot = Bot(token=src.glbl_nms.TOKEN)
 dp = Dispatcher(bot)
 # Включаем логирование, чтобы не пропустить важные сообщения
 logging.basicConfig(level=logging.INFO)
-
-
-HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
-
-# webhook settings
-WEBHOOK_HOST = f'https://{HEROKU_APP_NAME}.herokuapp.com'
-WEBHOOK_PATH = f'/webhook/{src.glbl_nms.TOKEN}'
-WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
-
-# webserver settings
-WEBAPP_HOST = '0.0.0.0'
-WEBAPP_PORT = os.getenv('PORT', default=8000)
-
-
-async def on_startup(dispatcher):
-    await bot.set_webhook(WEBHOOK_URL, drop_pending_updates=True)
-
-
-async def on_shutdown(dispatcher):
-    await bot.delete_webhook()
 
 """"
 Создаю кнопки
@@ -204,13 +182,3 @@ async def crypt_10(message: types.Message):
 def start():
     # Запуск бота
     executor.start_polling(dp, skip_updates=True)
-    logging.basicConfig(level=logging.INFO)
-    start_webhook(
-        dispatcher=dp,
-        webhook_path=WEBHOOK_PATH,
-        skip_updates=True,
-        on_startup=on_startup,
-        on_shutdown=on_shutdown,
-        host=WEBAPP_HOST,
-        port=WEBAPP_PORT,
-    )
