@@ -1,3 +1,4 @@
+python-telegram-bot==12.7
 aiogram
 numpy
 beautifulsoup4
