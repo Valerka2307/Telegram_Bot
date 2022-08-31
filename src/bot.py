@@ -42,7 +42,7 @@ async def buttons(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[0]}'))
-async def crypt_1(message: types.Message):
+async def Bitcoin(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[0]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[0]}']
     await message.answer(f'{src.glbl_nms.names[0]}\n\n'
@@ -56,7 +56,7 @@ async def crypt_1(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[1]}'))
-async def crypt_2(message: types.Message):
+async def BinanceCoin(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[1]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[1]}']
     await message.answer(f'{src.glbl_nms.names[1]}\n\n'
@@ -70,7 +70,7 @@ async def crypt_2(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[2]}'))
-async def crypt_3(message: types.Message):
+async def Solana(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[2]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[2]}']
     await message.answer(f'{src.glbl_nms.names[2]}\n\n'
@@ -84,7 +84,7 @@ async def crypt_3(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[3]}'))
-async def crypt_4(message: types.Message):
+async def Ethereum(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[3]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[3]}']
     await message.answer(f'{src.glbl_nms.names[3]}\n\n'
@@ -98,7 +98,7 @@ async def crypt_4(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[4]}'))
-async def crypt_5(message: types.Message):
+async def Litecoin(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[4]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[4]}']
     await message.answer(f'{src.glbl_nms.names[4]}\n\n'
@@ -112,7 +112,7 @@ async def crypt_5(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[5]}'))
-async def crypt_6(message: types.Message):
+async def BitcoinCash(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[5]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[5]}']
     await message.answer(f'{src.glbl_nms.names[5]}\n\n'
@@ -126,7 +126,7 @@ async def crypt_6(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[6]}'))
-async def crypt_7(message: types.Message):
+async def ShibaInu(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[6]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[6]}']
     await message.answer(f'{src.glbl_nms.names[6]}\n\n'
@@ -140,7 +140,7 @@ async def crypt_7(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[7]}'))
-async def crypt_8(message: types.Message):
+async def Dogecoin(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[7]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[7]}']
     await message.answer(f'{src.glbl_nms.names[7]}\n\n'
@@ -154,7 +154,7 @@ async def crypt_8(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[8]}'))
-async def crypt_9(message: types.Message):
+async def Cardano(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[8]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[8]}']
     await message.answer(f'{src.glbl_nms.names[8]}\n\n'
@@ -168,7 +168,7 @@ async def crypt_9(message: types.Message):
 
 
 @dp.message_handler(Text(equals=f'{src.glbl_nms.names[9]}'))
-async def crypt_10(message: types.Message):
+async def EthereumClassic(message: types.Message):
     dicty = src.glbl_nms.dictionary[f'{src.glbl_nms.names[9]}']
     dicty_next = src.glbl_nms.dictionary_next[f'{src.glbl_nms.names[9]}']
     await message.answer(f'{src.glbl_nms.names[9]}\n\n'
